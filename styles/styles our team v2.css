@@ -1,0 +1,235 @@
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Raboto", sans-serif;
+  color: linear-gradient(rgb(0, 0, 0,0.3),rgb(0, 0, 0,0.3)) ;
+}
+
+/* STYLING THE HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  padding: 40px 400px;
+  z-index: 1000;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  padding: 15px 15px;
+}
+.active-btn,
+ul li a:hover {
+  background: linear-gradient(rgb(0, 0, 0,0.1),rgb(0, 0, 0,0.1));
+}
+
+.sticky {
+  padding: 5px 100px;
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
+  transition: 0.6s;
+}
+
+.sticky ul li a {
+  color: rgb(255, 245, 245);
+  font-weight: bolder;
+}
+
+/* End of navbar */
+
+.bgimg-1 
+{
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../images/ourteam.jpg");
+  min-height: 100%;
+}
+
+.bg-dark {
+  color: #ddd;
+  background-color: #000000;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.bg-light {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+.light-text {
+  text-align: center;
+  color: #f7f7f7;
+}
+.border {
+  font-size: 25px;
+  color: #1a1919;
+}
+h3,
+p {
+  text-align: center;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.center {
+  text-align: center;
+  padding: 30px 0;
+}
+
+  
+
+ .section-title h2 {
+  text-transform: uppercase;
+}
+
+.section-title {
+    margin: 3% 0;
+  }
+  .section-title p {
+    text-transform: uppercase;
+    font-weight:bold;
+  }
+  .single-team{
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+  }
+  
+  .team-img{
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+  }
+  .team-img img{
+    width: 100%;
+    transition: .07s;
+  }
+  .single-team:hover .team-img img {
+    transform: scale(1.1);
+  }
+  .team-content {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: all .35s;
+    background: rgb(71, 218, 255);
+    z-index:5;
+  }
+  .single-team:hover .team-content{
+    height: 240px;
+  }
+  .team-info {
+    padding: 5px 20px 5px 20px;
+    transition: all .17s;
+  }
+  .single-team:hover .team-content{
+    background: #000;
+  }
+  .single-team .team-content .team-info h3 {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin: 5px;
+  }
+  .single-team:hover .team-info h3{
+    color: rgb(71, 218, 255);
+  }
+  .team-info p {
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
+  }
+  .single-team-text p{
+    margin-top: 5px;
+    color: white;
+  }
+  .team-text {
+    color: #fff;
+    padding: 0 10px 5px;
+  }
+  
+  
+  
+  
+  
+  /* ignore the code below */
+  
+  
+  .link-area
+  {
+    position:fixed;
+    bottom:20px;
+    left:20px;  
+    padding:15px;
+    border-radius:40px;
+    background:tomato;
+    z-index: 10;
+  }
+  .link-area a
+  {
+    text-decoration:none;
+    color:#fff;
+    font-size:25px;
+  }
+  
+
